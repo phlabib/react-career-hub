@@ -1,4 +1,6 @@
 
+import { GrLocation , GrCurrency} from "react-icons/gr";
+
 const Job = ({job}) => {
     const {logo, job_title, company_name, remote_or_onsite, location, job_type, salary } = job;
     return (
@@ -13,6 +15,11 @@ const Job = ({job}) => {
         </div>
           <div className="card-actions justify-start">
             <button className="btn btn-primary">View Details</button>
+          </div>
+          <div className="flex gap-8">
+            <h2 className="flex gap-2 items-center"><GrLocation></GrLocation>{location}</h2>
+            <h2 className="flex gap-2 items-center"><GrCurrency></GrCurrency>{salary}</h2>
+
           </div>
         </div>
       </div>
