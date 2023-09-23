@@ -24,6 +24,7 @@ const router = createBrowserRouter([
         path : '/applid',
         element : <ApplidJobs></ApplidJobs>
       },
+      
 
     ]
   },
